@@ -16,7 +16,7 @@
     }
     .hero{
         background: linear-gradient(1turn, #9c8549, #ffe6a7,#a08136);
-    padding: 30px 10px;
+    padding: 30px 0px;
     min-height: 45vh;
     display: flex;
     flex-direction: column;
@@ -28,6 +28,7 @@
     .hero_wave{
         position: relative;
         top: 82px;   
+        width: 100%;
     }
     .hero_content{
         display: flex;
@@ -115,6 +116,11 @@
         font-size: 20px;
         font-weight: 600;
         font-family: sans-serif;
+        img{
+            width: 90px;
+            height:60px;
+            object-fit: cover;
+        }
     }
     .nav_links{
         display: flex;

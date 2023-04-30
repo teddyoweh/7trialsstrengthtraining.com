@@ -2,6 +2,7 @@ import React from "react";
 import landingstyles from '../styles/landing.module.scss'
 import { useSpring, animated } from '@react-spring/web'
 import wave from '../assets/wave.svg'
+import logo from '../assets/logo.png'
 export default function LandingRoute(){
   
     return (
@@ -9,7 +10,7 @@ export default function LandingRoute(){
             <div className={landingstyles.hero}>
                 <nav className={landingstyles.nav}>
                     <div className={landingstyles.logo}>
-    LOGO HERE
+                            <img src={logo.src}/>
                     </div>
                     <div className={landingstyles.nav_links}>
                         <a href="#" className={landingstyles.nav_link}>
