@@ -399,7 +399,7 @@ export default function LandingRoute(){
                 <div className={landingstyles.planoptionsbox}>
                         <div className={landingstyles.planoptions}>
                             {
-                                planshashmap[planfilter].map((plandets,index)=>{
+                                planshashmap[planfilter].map((plandets:any)=>{
                                     return (
                                         <>
                                         <div className={landingstyles.planoption}>
