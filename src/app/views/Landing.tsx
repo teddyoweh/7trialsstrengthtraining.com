@@ -201,39 +201,10 @@ export default function LandingRoute(){
       }
       
  
-  function updateNavActive() {
-    const sections = [
-      { id: 'home', navId: 'nav-home' },
-      { id: 'about', navId: 'nav-about' },
-      { id: 'trainers', navId: 'nav-trainers' },
-      { id: 'whyus', navId: 'nav-whyus' },
-      { id: 'plans', navId: 'nav-plans' },
-      { id: 'contact', navId: 'nav-contact' },
-    ];
-  
-    sections.forEach(({ id, navId }) => {
-      const section = document.getElementById(id);
-      const navLink = document.getElementById(navId);
-     
-  
-      if (isInViewport(section)) {
-        console.log('lol')
-        navLink.classList.add(landingstyles.navactive);
-      } else {
-        console.log('fs')
-        navLink.classList.remove(landingstyles.navactive);
-      }
-    });
-  }
+ 
   
  
-  useEffect(() => {
-    document.addEventListener('scroll', updateNavActive);
-
-    return () => {
-      document.removeEventListener('scroll', updateNavActive);
-    };
-  }, []);
+ 
   
     return (
         
