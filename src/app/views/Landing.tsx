@@ -7,7 +7,7 @@ import gym from '../assets/gym.jpeg'
 import midimg from '../assets/midimg.jpeg'
 import trainerimg from '../assets/headshot.jpeg'
 import girlimg from '../assets/girl.jpeg'
-import Nav from "../components/Nav";
+ 
  
  
 
