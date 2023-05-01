@@ -9,17 +9,9 @@ import {
 } from "react-router-dom";
 
 import LandingRoute from "./views/Landing";
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: (
-      <LandingRoute/>
-    ),
-  },
-  
-]);
+ 
 
 export default function AppRoutes(){
-    return<RouterProvider router={router} />
+    return <LandingRoute/>
 
 }
