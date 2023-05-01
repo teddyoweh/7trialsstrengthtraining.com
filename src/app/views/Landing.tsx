@@ -7,7 +7,7 @@ import gym from '../assets/gym.jpeg'
 import midimg from '../assets/midimg.jpeg'
 import trainerimg from '../assets/headshot.jpeg'
 import girlimg from '../assets/girl.jpeg'
- 
+import PlanOptions from './PlanOptions'
  
  
 
@@ -16,13 +16,28 @@ export default function LandingRoute(){
     function toggle(){
         setOpen(!open)
     }
+    type PlanType = {
+        name: string;
+        price: string;
+        desc: string;
+        rate: string;
+        benefits:Array<string>;
+      };
+      
+      type PlansHashMapType = {
+        'One Time': PlanType[];
+        'Monthly': PlanType[];
+        'In Person': PlanType[];
+      };
+      
+ 
     const planfilters = [
         'One Time',
         'Monthly',
         'In Person',
     ]
-    const [planfilter, setPlanfilter] = useState(planfilters[0])
-    const planshashmap={
+    const [planfilter, setPlanfilter] = useState<string>(planfilters[0])
+    const planshashmap: PlansHashMapType={
         'One Time':[
           
             {
@@ -397,63 +412,7 @@ export default function LandingRoute(){
 
                 </div>
                 <div className={landingstyles.planoptionsbox}>
-                        <div className={landingstyles.planoptions}>
-                            {
-                                planshashmap[planfilter].map((plandets:any)=>{
-                                    return (
-                                        <>
-                                        <div className={landingstyles.planoption}>
-                                <div className={landingstyles.planoptionheader}>
-                                    <label htmlFor="">
-                                        {plandets.name}
-                                    </label>
-                                    {/* <small>
-                                        3 Months
-                                    </small> */}
-
-                                </div>
-                                <div className={landingstyles.pricing}>
-                                    <label htmlFor="">{plandets.price}</label>
-                                    <span>{plandets.rate}</span>
-
-                                </div>
-                                <div className={landingstyles.planoptioncontent}>
-                                    {
-                                        plandets.benefits.map((benefits,key)=>{
-                                            return (
-                                                <>
-                                                <div className={landingstyles.planoptionitem}>
-                                        <span>
-                                        <i className='bx bxs-check-circle'></i>
-                                        </span>
-                                        <label htmlFor="">
-                                    {benefits}
-                                        </label>
-
-                                    </div>
-                                                </>
-                                            )
-                                        })
-                                    }
-                                    
-                                </div>
-
-                                <div className={landingstyles.planoptionbtn}>
-                                    <a href="" className={landingstyles.planoptionbtna}>Get Started</a>
-                                </div>
-
-
-
-
-                            </div>
-                                        </>
-                                    )
-                                })
-                            }
-                            
-                          
-
-                        </div>
+                       <PlanOptions planfilter={planfilter} planshashmap={planshashmap}/>
 
 
                 </div>
