@@ -214,7 +214,7 @@ export default function LandingRoute(){
         <div className={landingstyles.landing}>
                   <nav className={landingstyles.nav}>
         <div className={landingstyles.logo}>
-            <Image src={logo.src} alt="" />
+            <img src={logo.src} alt="" />
         </div>
         <div className={landingstyles.navlinks}>
   <a href="#home" id="nav-home">Home</a>
@@ -256,7 +256,7 @@ export default function LandingRoute(){
                         </div>
                         </div>
                         <div className={landingstyles.heroimg}>
-                            <Image src={gym.src} alt="gym" />
+                            <img src={gym.src} alt="gym" />
 
                         </div>
 
@@ -270,7 +270,7 @@ export default function LandingRoute(){
             <div  className={landingstyles.mid}>
             <div className={landingstyles.midcontent}>
                 <div className={landingstyles.midimg}>
-                    <Image src={midimg.src} alt="gym" />
+                    <img src={midimg.src} alt="gym" />
                 </div>
                 <div className={landingstyles.midtext}>
                     <p className={landingstyles.midbio}>
@@ -295,7 +295,7 @@ export default function LandingRoute(){
 
                                     <div className={index%2==0?landingstyles.trainer:landingstyles.trainer1}>
                         <div className={landingstyles.trainerimg}>
-                            <Image src={trainer.img} alt="trainer" />
+                            <img src={trainer.img} alt="trainer" />
                         </div>
                         <div className={landingstyles.trainerinfo}>
                             <label htmlFor="">
@@ -349,7 +349,7 @@ export default function LandingRoute(){
                                     <>
                                     <div className={landingstyles.whyusitem}>
                                         <div className={landingstyles.whyusicon}>
-                                            <Image src={why.img} alt="" />
+                                            <img src={why.img} alt="" />
                                         </div>
                                
                                             <label htmlFor="">
@@ -365,7 +365,7 @@ export default function LandingRoute(){
                 </div>
                 <div className={landingstyles.whyusright}>
                     <div className={landingstyles.whyusimg}>
-                        <Image src={girlimg.src} alt="" />
+                        <img src={girlimg.src} alt="" />
                     </div>
                 </div>
 
