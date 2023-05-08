@@ -7,9 +7,12 @@ import gym from '../assets/gym.jpeg'
 import midimg from '../assets/midimg.jpeg'
 import trainerimg from '../assets/headshot.jpeg'
 import girlimg from '../assets/girl.jpeg'
+import seth from '../assets/seth.jpeg'
+import garret from '../assets/garret.jpeg'
 import PlanOptions from './PlanOptions'
 import Image from "next/image";
- 
+import NavBar from '../components/Nav';
+import Menubar from '../components/Menubar'
 
 export default function LandingRoute(){
     const [open, setOpen] = useState(false)
@@ -168,12 +171,12 @@ export default function LandingRoute(){
         name:'Garret Johnson',
         spec:'Sports-Specific Training',
         bio:'As a sports-specific training specialist, I design personalized training programs to help athletes improve their performance in their specific sport. With years of experience working with athletes from various sports, I can guide you every step of the way to reach your full potential. Contact me today to start your journey towards becoming a better athlete.',
-        img:trainerimg.src
+        img:garret.src
         },{
             name:'Seth LeFlore',
             spec:'Coaching and BodyBuilding',
             bio:"As a coach in the realm of bodybuilding, I have honed my expertise in the art and science of sculpting the human physique. My passion lies in crafting bespoke training and nutrition programs for each of my clients, based on their unique goals, current fitness level, and individual circumstances.",
-            img:trainerimg.src
+            img:seth.src
     }]
 
     const fyplist = [
@@ -212,30 +215,7 @@ export default function LandingRoute(){
     return (
         
         <div className={landingstyles.landing}>
-                  <nav className={landingstyles.nav}>
-        <div className={landingstyles.logo}>
-            <img src={logo.src} alt="" />
-        </div>
-        <div className={landingstyles.navlinks}>
-  <a href="#home" id="nav-home">Home</a>
-  <a href="#about" id="nav-about">About</a>
-  <a href="#trainers" id="nav-trainers">Our Trainers</a>
-  <a href="#whyus" id="nav-whyus">Why Us</a>
-  <a href="#plans" id="nav-plans">Plans</a>
-  <a href="#contact" id="nav-contact">Contact</a>
-</div>
-
-        <div className={landingstyles.navbtns}>
-            <a href="">
-                Get Started
-            </a>
-
-        </div>
-        <div className={landingstyles.menu_icon}>
-        <i className='bx bx-menu' onClick={()=>toggle()}></i>
-        </div>
-
-    </nav>
+    <NavBar toggle={toggle} open={open} setOpen={setOpen}/>
             <div id="home" className={landingstyles.hero}>
       
                 <div className={landingstyles.herocontent}>
@@ -264,8 +244,15 @@ export default function LandingRoute(){
                 </div>
 
             </div>
-            <div id="about">
-
+            <div id="about" className={landingstyles.about}>
+                <div className={landingstyles.aboutheader}>
+                    <label htmlFor="">
+                        About Us
+                    </label>
+                </div>
+                <p className={landingstyles.aboutbio}>
+               <b> 7 trails</b> came from the verse Proverbs 24:16, <i> “for though the righteous fall seven times, they rise again, but the wicked stumble when calamity strikes.”</i> It’s to show that no matter what you have been through, you can always pick yourself back up and keep going. The Spartan shield is to represent how the Spartans used their shields. They weren’t for the soldier wearing it. The shield was for the man next to him. This symbolizes that you are never alone and always have someone looking out for you. 
+                </p>
             </div>
             <div  className={landingstyles.mid}>
             <div className={landingstyles.midcontent}>
@@ -405,28 +392,59 @@ export default function LandingRoute(){
 
                 </div>
             </div>
-            <div id="contact">
+            <div id="contact" className={landingstyles.contact}>
+                <div className={landingstyles.contactheader}>
+                    <label htmlFor="">
+                        Contact Us 
+                    </label>
+                </div>
+                <div className={landingstyles.contactcontent}>
+                <div className={landingstyles.contactitem}>
+                        <a href="">
+                            Mail
+                            <span>
+                        ↗
+                        </span>
+                        </a>
+                    
+                        
+                    </div>
+                    <div className={landingstyles.contactitem}>
+                        <a href="">
+                            Instagram
+                            <span>
+                        ↗
+                        </span>
+                        </a>
+                       
+                        
+                    </div>
+                    <div className={landingstyles.contactitem}>
+                        <a href="">
+                            Tiktok
+                            <span>
+                        ↗
+                        </span>
+                        </a>
+                        
+                        
+                    </div>
+                    <div className={landingstyles.contactitem}>
+                        <a href="">
+                            Facebook 
+                            <span>
+                        ↗
+                        </span>
+                        </a>
+                       
+                        
+                    </div>
+                  
 
+                </div>
             </div>
 
-
-            {
-                open!=null&&
-           
-            <div className={open ==true?landingstyles.menu:landingstyles.menu1}>
-                <div className={landingstyles.menucontent}>
-                <div className={landingstyles.menu_x}>
-                    <i className='bx bx-x' onClick={()=>setOpen(!open)}></i>
-                    </div>
-                <a href="" className={landingstyles.navactive}>Home</a>
-                        <a href="">About</a>
-                        <a href="">Our Trainer</a>
-                        <a href="">Why Us</a>
-                        <a href="">Plans</a>
-                        <a href="">Contact</a>
-                </div>
-                </div>
-             }
+<Menubar open={open} setOpen={setOpen}/>
         </div>
     )
 

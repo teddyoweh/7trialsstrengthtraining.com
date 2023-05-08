@@ -128,7 +128,7 @@ padding: 40px 10px;
                 min-height: 400px;
                 width: 90%;
                 padding: 40px 10px;
-                background: white;
+     
                 border-radius: 10px;
                 .planoption{
                     background: #fff;
@@ -143,9 +143,9 @@ padding: 40px 10px;
                     &:hover{
                         transition: 0.4s;
                         background: #fff;
-                        box-shadow: 0px 0px 100px #bbbbbb;
+                        box-shadow: 0px 0px 100px #3c3c3c;
                     }
-                    box-shadow: 0px 0px 30px #bbbbbb;
+                    box-shadow: 0px 0px 30px #3f3f3f;
                     .planoptionheader{
                         display: flex;
                         flex-direction: column;
@@ -483,7 +483,47 @@ padding: 40px 10px;
         }
     }
 }
+.contact{
+    padding: 50px 30px;
+    .contactheader{
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
 
+        label{
+            font-size: 20px;
+            font-weight: 500;
+            color: white;
+            font-family: poppins;
+        }
+    }
+    a{
+        text-decoration: none; 
+        border-width: 0px 0px 1px;
+        border-style: solid;
+        color: white;
+        font-size: 20px;
+        font-family: lato;
+        font-weight: 300;
+        
+    }
+    span{
+        text-decoration: none; 
+        margin-left: 5px;
+        color: white;
+        font-size: 15px;
+        font-family: lato;
+    }
+    .contactcontent{
+        display: flex;
+        flex-direction: row;
+    }
+    .contactitem{
+        margin-right: 10px;
+    }
+}
 .nav{    
     display: flex;
     flex-direction: row;
@@ -631,8 +671,37 @@ padding: 40px 10px;
 
     }
 
+.about{
+    .aboutheader{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0px;
+
+    
+        label{
+            font-size: 30px;
+            font-weight: 500;
+            color: white;
+            font-family: poppins;
+        }
+}
+p{
+    padding: 10px 60px;
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    font-family: sans-serif;
+ 
+    line-height: 1.5; 
+}
+}
 
 @media only screen and (max-width: 800px) {
+    .nav{
+        position: initial !important;
+    }
     .planoptions{
         display: flex;
         flex-direction: column  !important;
