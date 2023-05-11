@@ -14,10 +14,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
 
+import Tracker from './Tracker'
  export default function NavBar({toggle,open,setOpen}){
 
     return (
         <>
+        <Tracker/>
                       <nav className={landingstyles.nav}>
         <div className={landingstyles.logo}>
         <Link href="./">

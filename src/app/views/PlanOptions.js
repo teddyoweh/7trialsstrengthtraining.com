@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import landingstyles from '../styles/landing.module.scss'
+import Link from 'next/link'
 
 
 export default function PlanOptions({planfilter,planshashmap}){
@@ -46,7 +47,8 @@ export default function PlanOptions({planfilter,planshashmap}){
             </div>
 
             <div className={landingstyles.planoptionbtn}>
-                <a href="" className={landingstyles.planoptionbtna}>Get Started</a>
+            <Link href='./getstarted' className={landingstyles.planoptionbtna}>Get Started</Link>
+            
             </div>
 
 
