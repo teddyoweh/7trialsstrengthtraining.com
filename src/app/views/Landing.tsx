@@ -39,6 +39,11 @@ export default function LandingRoute(){
         'Monthly',
         'In Person',
     ]
+//     One week plan to help give structure and guidance.
+//.
+// 3-day, 4-day, or 5-day programs to best fit your needs
+// For college discount proof of current enrollment is required
+
     const [planfilter, setPlanfilter] = useState<string>(planfilters[0])
     const planshashmap: PlansHashMapType={
         'One Time':[
@@ -49,9 +54,10 @@ export default function LandingRoute(){
                 desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae diam eu nulla tincidunt tincidunt. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc,',
                 rate:'/One-time Payment',
                 benefits:[
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                    'One week plan to help give structure and guidance.',
+                    ' Created and published by both Garrett and Seth.',
+                    '3-day, 4-day, or 5-day programs to best fit your needs',
+                    'For college discount proof of current enrollment is required'
                     
                 ],
                 
@@ -64,11 +70,12 @@ export default function LandingRoute(){
                 desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae diam eu nulla tincidunt tincidunt. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc,',
                 rate:'/One-time Payment',
                 benefits:[
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                    'One week plan to help give structure and guidance.',
+                    ' Created and published by both Garrett and Seth.',
+                    '3-day, 4-day, or 5-day programs to best fit your needs',
+                    'For college discount proof of current enrollment is required'
                     
-                ]
+                ],
 
 
             }
@@ -82,9 +89,9 @@ export default function LandingRoute(){
                     desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae diam eu nulla tincidunt tincidunt. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc,',
                     rate:'/Per Month',
                     benefits:[
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                        'For those whose goals are to compete.',
+                        'Powerlifting, Bodybuilding, or Athletes',
+                        
     
                     ]
     
@@ -96,9 +103,10 @@ export default function LandingRoute(){
                     desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae diam eu nulla tincidunt tincidunt. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc,',
                     rate:'/Per Month',
                     benefits:[
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                        'Completely customized program for each client',
+                        'Weekly checking with your coach .',
+                        'Also help with calculating your macronutrients',
+                        'For college discount proof of current enrollment is required'
                         
                     ]
     
@@ -110,9 +118,10 @@ export default function LandingRoute(){
                     desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae diam eu nulla tincidunt tincidunt. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc,',
                     rate:'/Per Month',
                     benefits:[
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                        'Completely customized program for each client',
+                        'Weekly checking with your coach .',
+                        'Also help with calculating your macronutrients',
+                        'For college discount proof of current enrollment is required'
                         
                     ]
     
@@ -127,9 +136,9 @@ export default function LandingRoute(){
                     desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae diam eu nulla tincidunt tincidunt. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc,',
                     rate:'/Per Session',
                     benefits:[
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+                        'Your gym must be accommodating to outside trainers',
+                        'You must Live with in the DFW area ',
+ 
     
                     ]
     
@@ -141,10 +150,10 @@ export default function LandingRoute(){
                     desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae diam eu nulla tincidunt tincidunt. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc,',
                     rate:'/Per Session',
                     benefits:[
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                        
+                        'Your gym must be accommodating to outside trainers',
+                        'You must Live with in the DFW area ',
+ 
+    
                     ]
     
     
@@ -155,10 +164,10 @@ export default function LandingRoute(){
                     desc:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae diam eu nulla tincidunt tincidunt. Sed euismod, nisl quis aliquam ultricies, nunc nisl ultricies nunc,',
                     rate:'/Per Session',
                     benefits:[
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-                        
+                        'Your gym must be accommodating to outside trainers',
+                        'You must Live with in the DFW area ',
+ 
+    
                     ]
     
     
