@@ -19,7 +19,7 @@ import Tracker from './Tracker'
 
     return (
         <>
-        <Tracker/>
+ 
                       <nav className={landingstyles.nav}>
         <div className={landingstyles.logo}>
         <Link href="./">
