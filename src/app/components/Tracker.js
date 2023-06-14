@@ -73,17 +73,17 @@ export default function Tracker(){
     })
  
     },[])
-    useEffect(() => {
+//     useEffect(() => {
 
-        if(window!=undefined){
+//         if(window!=undefined){
 
 
-    getipdata()
-}
+//     getipdata()
+// }
       
       
     
-    },[  getipdata])
+//     },[  getipdata])
     
      
         
