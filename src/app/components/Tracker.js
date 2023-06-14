@@ -74,8 +74,12 @@ export default function Tracker(){
  
     },[])
     useEffect(() => {
+
+        if(window!=undefined){
+
+
     getipdata()
- 
+}
       
       
     
