@@ -184,7 +184,7 @@ export default function LandingRoute(){
         },{
             name:'Seth LeFlore',
             spec:'Coaching and BodyBuilding',
-            bio:"As a coach in the realm of bodybuilding, I have honed my expertise in the art and science of sculpting the human physique. My passion lies in crafting bespoke training and nutrition programs for each of my clients, based on their unique goals, current fitness level, and individual circumstances.",
+            bio:"As an NASM Certified Personal Trainer and Virtual Coaching Specialist, I have encountered and trained many different types of clients with many different types of goals. I have extensive experience in fat loss training and general muscle building programming. However, I have also begun to focus on and gain the knowledge and experience necessary to be successful in the realm of bodybuilding. My passion lies in crafting high quality and personalized training and nutrition programs for each of my clients, based on their unique goals, circumstance, and fitness levels.",
             img:seth.src
     }]
 
