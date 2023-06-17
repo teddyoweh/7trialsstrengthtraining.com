@@ -282,7 +282,7 @@ export default function GetStartedPage(){
                         
                     </form>
                     <div className={getstartedstyles.form_img}>
-                        <Image src={waterimg.src} alt="logo" width={600} height={600}/>
+                        <Image src={waterimg.src} alt="logo" className="getstartimg" width={600} height={600}/>
 
                     </div>
                 </div>

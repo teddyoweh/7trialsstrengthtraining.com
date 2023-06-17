@@ -173,3 +173,12 @@
         
     }
 }
+
+@media screen and (max-width:600px) {
+    .getstartimg{
+        display: none;
+    }
+    form{
+        width: 100%;
+    }
+}
