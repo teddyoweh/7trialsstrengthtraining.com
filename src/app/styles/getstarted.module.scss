@@ -177,7 +177,10 @@
 
 @media screen and (max-width:600px) {
     .getstartimg{
-        display: none;
+        display: none !important;
+    }
+    .form_img{
+        display: none !important;
     }
     form{
         width: 100%;
