@@ -185,4 +185,11 @@
     .form{
         width: 100% !important;
     }
+    .planfilters{
+        flex-wrap: wrap  !important;
+    }
+    .planfilter{
+        width: max-content !important;
+        margin-bottom: 10px !important;
+    }
 }
