@@ -218,7 +218,7 @@ export default function GetStartedPage(){
                     <label for="">Get Started.</label>
                 </div>
                 <div className={getstartedstyles.form}>
-                    <form action="">
+                    <form action="" className="form">
 
                         <div className={getstartedstyles.form_group}>
 
