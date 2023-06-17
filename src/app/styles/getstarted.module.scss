@@ -182,8 +182,13 @@
     .form_img{
                 display: none !important;
     }
-    .form{
+    .form__{
         width: 100% !important;
+    }
+    .form{
+        form{
+            width:  100% !important;
+        }
     }
     .planfilters{
         flex-wrap: wrap  !important;
