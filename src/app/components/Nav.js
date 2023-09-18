@@ -83,7 +83,22 @@ import Tracker from './Tracker'
   Plans
 </ScrollLink>
 
+<ScrollLink
+  activeClass="active"
+  to="plans"
+  spy={true}
+  smooth={true}
+  offset={-70}
+  duration={500}
+>
+  <a
+  href="https://www.etsy.com/shop/7TrialsApparel?ref=dashboard-header"
+  >
 
+
+  Apparel
+  </a>
+</ScrollLink>
 <ScrollLink
   activeClass="active"
   to="contact"
