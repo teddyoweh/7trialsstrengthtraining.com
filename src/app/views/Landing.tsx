@@ -409,7 +409,7 @@ export default function LandingRoute(){
                 </div>
                 <div className={landingstyles.contactcontent}>
                 <div className={landingstyles.contactitem}>
-                        <a href="">
+                        <a href="mailto:7trialsstrength@gmail.com">
                             Mail
                             <span>
                         ↗
@@ -419,7 +419,7 @@ export default function LandingRoute(){
                         
                     </div>
                     <div className={landingstyles.contactitem}>
-                        <a href="">
+                        <a href="https://www.instagram.com/7trialsstrength/">
                             Instagram
                             <span>
                         ↗
